@@ -70,6 +70,7 @@ def parse_args_and_config():
         default="generalized",
         help="sampling approach (generalized or ddpm_noisy)",
     )
+    parser.add_argument("--total_n_samples", type=int, default=100, help="number of examples to be generated")
     parser.add_argument(
         "--skip_type",
         type=str,
